@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+<!-------HEADER-------->
+<header>
+    <h1>Static Resume</h1>
+    <h2>Asfaa Khan</h2>
+    <p>asfaakhan031@gmail.com | 0315-4515215</p>
+    <img src="./img/img.jpeg" alt="Profile Image">
+</header>
+
+<!-------SECTIONS---------->
+
+<!-------Personal Info------->
+<div class="resume-section">
+    <h2>Personal Information</h2>
+    <div id="personal-info">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Asfaa Khan">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="khanzadiasfa@gmail.com">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" value="0314-4563155">
+        <button onclick="toggleSection('personal-info')">Hide</button>
+    </div>
+</div>
+
+<!---------Education------------>      
+<div class="resume-section">
+    <h2>Education</h2>
+    <div id="education-info">
+        <label for="school">School:</label>
+        <input type="text" id="school" name="school" value="New White Rose School">
+        <label for="degree">Degree:</label>
+        <input type="text" id="degree" name="degree" value="Bachelor In Commerce">
+        <label for="grad-year">Graduation Year:</label>
+        <input type="text" id="grad-year" name="grad-year" value="2022">
+        <button onclick="toggleSection('education-info')">Hide</button>
+    </div>
+</div>
+
+<!--------------Skills--------------->   
+<div class="resume-section">
+    <h2>Skills</h2>
+    <div id="skills-info">
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills">HTML, CSS, TypeScript, JavaScript, MS Word, MS Excel, PowerPoint</textarea>
+        <button onclick="toggleSection('skills-info')">Hide</button>
+    </div>
+</div>
+
+<!---------------Work Experience------------>   
+<div class="resume-section">
+    <h2>Work Experience</h2>
+    <div id="work-info">
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" value="ABC Company">
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" value="Junior Web Developer">
+        <label for="years">Years:</label>
+        <input type="text" id="years" name="years" value="2023">
+        <button onclick="toggleSection('work-info')">Hide</button>
+    </div>
+</div>
+
+<!---------- Hidden Sections ---------->
+<section>
+    <div class="resume-section">
+        <h2>Hidden Sections</h2>
+        <ul id="hidden-sections-list"></ul>
+    </div>
+</section>
+
+<script src="resume.js"></script>
+</body>
+</html>
+
